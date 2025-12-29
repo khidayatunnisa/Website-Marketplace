@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment Gateway Sandbox - UMKM Mart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="payment-container">
+
+    <h1 class="payment-title">Pembayaran</h1>
+
+    <div class="payment-wrapper">
+
+      <form id="payment-form" class="payment-form">
+
+        <h2>Informasi Kartu Kredit</h2>
+
+        <label for="card-name">Nama Pemilik Kartu</label>
+        <input type="text" id="card-name" name="cardName" placeholder="Nama sesuai kartu" required />
+
+        <label for="card-number">Nomor Kartu Kredit</label>
+        <input type="text" id="card-number" name="cardNumber" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required />
+
+        <div class="card-details-row">
+          <div>
+            <label for="expiry-date">Tanggal Kadaluarsa</label>
+            <input type="month" id="expiry-date" name="expiryDate" required />
+          </div>
+
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" maxlength="4" placeholder="123" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary payment-btn">Bayar Sekarang</button>
+
+      </form>
+
+      <div class="payment-summary">
+        <h2>Ringkasan Pembayaran</h2>
+        <p>Produk UMKM Lokal</p>
+        <p><strong>Total Harga:</strong> Rp 150.000</p>
+        <a href="cart.html" class="btn btn-secondary">Kembali ke Keranjang</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/payment.js"></script>
+
+</body>
+</html>

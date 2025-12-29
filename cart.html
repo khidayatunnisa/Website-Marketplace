@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Keranjang Belanja</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="cart-container">
+
+    <h1 class="cart-title">Keranjang Belanja</h1>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Jumlah</th>
+          <th>Harga</th>
+          <th>Subtotal</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <tr>
+          <td class="product-info">
+            <img src="https://via.placeholder.com/60" alt="Kopi Lokal" />
+            <span>Kopi Lokal</span>
+          </td>
+          <td><input type="number" min="1" value="2" class="qty-input" /></td>
+          <td>Rp 25.000</td>
+          <td class="subtotal">Rp 50.000</td>
+          <td><button class="btn-delete">Hapus</button></td>
+        </tr>
+        <tr>
+          <td class="product-info">
+            <img src="https://via.placeholder.com/60" alt="Keripik Singkong" />
+            <span>Keripik Singkong</span>
+          </td>
+          <td><input type="number" min="1" value="1" class="qty-input" /></td>
+          <td>Rp 15.000</td>
+          <td class="subtotal">Rp 15.000</td>
+          <td><button class="btn-delete">Hapus</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <span>Total:</span>
+      <span id="total-price">Rp 65.000</span>
+    </div>
+
+    <div class="cart-actions">
+      <a href="payment.html" class="btn btn-primary">Lanjut ke Pembayaran</a>
+      <a href="dashboard.html" class="btn btn-secondary">Kembali ke Dashboard</a>
+    </div>
+
+  </div>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

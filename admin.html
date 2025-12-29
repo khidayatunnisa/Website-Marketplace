@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="admin-container">
+
+    <h1 class="admin-title">Admin Dashboard</h1>
+
+    <div class="admin-wrapper">
+
+      <aside class="admin-sidebar">
+        <ul class="admin-menu">
+          <li><a href="#" class="admin-menu-item active">Pusat Bantuan</a></li>
+          <li><a href="#" class="admin-menu-item">Keluhan Pelanggan</a></li>
+          <li><a href="#" class="admin-menu-item">Kelola Produk</a></li>
+          <li><a href="#" class="admin-menu-item">Kelola Pesanan</a></li>
+          <li><a href="dashboard.html" class="btn-back-admin">← Kembali ke Dashboard</a></li>
+        </ul>
+      </aside>
+
+      <main class="admin-main">
+        <section id="help-center" class="admin-section active">
+          <h2>Pusat Bantuan</h2>
+          <p>
+            Di sini Anda dapat melihat panduan penggunaan sistem, FAQ, dan artikel bantuan untuk memudahkan pengelolaan marketplace.
+          </p>
+        </section>
+
+        <section id="customer-complaints" class="admin-section">
+          <h2>Keluhan Pelanggan</h2>
+          <p>
+            Daftar keluhan pelanggan akan muncul di sini, Anda dapat meninjau dan menindaklanjuti setiap keluhan secara efektif.
+          </p>
+        </section>
+
+        <section id="manage-products" class="admin-section">
+          <h2>Kelola Produk</h2>
+          <p>Fitur untuk menambah, mengedit, dan menghapus produk UMKM.</p>
+        </section>
+
+        <section id="manage-orders" class="admin-section">
+          <h2>Kelola Pesanan</h2>
+          <p>Memantau dan memproses data pesanan dari pelanggan.</p>
+        </section>
+      </main>
+
+    </div>
+
+  </div>
+
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
